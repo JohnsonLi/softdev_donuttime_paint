@@ -1,0 +1,339 @@
+donut_time
+Kenny Li(PM)
+Jiayang Chen
+Dennis Chen
+Johnson Li
+pd 7
+---------------------
+Donut Drawing
+
+
+ ______   ______   __   __   __       ______   _______
+/_____/\ /_____/\ /_/\ /_/\ /_/\     /_____/\ /______/\
+\:::_ \ \\::::_\/_\:\ \\ \ \\:\ \    \:::_ \ \\::::__\/__
+ \:\ \ \ \\:\/___/\\:\ \\ \ \\:\ \    \:\ \ \ \\:\ /____/\
+  \:\ \ \ \\::___\/_\:\_/.:\ \\:\ \____\:\ \ \ \\:\\_  _\/
+   \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \
+    \____/_/ \_____\/ \___/_(   \_____\/ \_____\/ \_____\/
+==============================================================
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+kennyL -- 2019-05-06 22:57
+--------------------------------------------------------------
++ added templates for devlog, app.py, and index.html
++ added doc, templates and util directory
+==============================================================
+
+chenD & kennyL -- 2019-05-012 22:38
+--------------------------------------------------------------
++ revised Design Document:
++ added arrow from drawing.js to canvas.html on component map
++ changed the implementation of saving pictures from file system to blobs
+- removed everything regarding websockets and collaboration
+==============================================================
+
+jiayangC -- 2019-05-13 20:17
+--------------------------------------------------------------
++ added stylesheet
++ began general tool encapsulating function (creates a button automatically, added events to event listener)
++ added basic pencil tool
+==============================================================
+
+chenD -- 2019-05-14 14:40
+--------------------------------------------------------------
++ created the eraser tool
++ started working on login, made a navbar
+==============================================================
+
+kennyL -- 2019-05-14 8:00
+--------------------------------------------------------------
++ added blob test html and js
++ added database method for creating tables
+==============================================================
+
+johnsonL -- 2019-05-14 15:31
+--------------------------------------------------------------
++ added simple color picker. click and hold to choose works.
++ made global var for color and pencil color works with pencil tool.
+==============================================================
+
+jiayangC -- 2019-05-14 20:21
+--------------------------------------------------------------
++ added sidebar
++ made canvas fullscreen
+==============================================================
+
+kennyL -- 2019-05-14 22:35
+--------------------------------------------------------------
++ completed process for downloading and storing blob to database
+
+TODO:
+- confirm message if image is going to overwrite
+- connect test files to actual file
+- retrieve image from database
+==============================================================
+
+kennyL -- 2019-05-14 22:35
+--------------------------------------------------------------
++ fixed bug with downloading blob which didn't work on ubuntu
+==============================================================
+
+jiayangC -- 2019-05-15 18:44
+--------------------------------------------------------------
++ added dotted circle to show where eraser was erasing
++ fixed a bug where the eraser would be choppy if mouse moved fast
++ fixed a bug where everything messes up if the user drags mouse out of canvas while holding down and then reenters
++ made eraser actually erase instead of filling white
++ added styling to show transparency
+==============================================================
+
+johnsonL -- 2019-05-15 21:44
+--------------------------------------------------------------
++ paintbrush tool with bezier but it looks like trash for some reason
+but when you run it locally with only canvas and bezier, it looks fine,
+̶I̶̶̶̶̶ ̶̶̶̶̶s̶̶̶̶̶u̶̶̶̶̶s̶̶̶̶̶p̶̶̶̶̶e̶̶̶̶̶c̶̶̶̶̶t̶̶̶̶̶ ̶̶̶̶̶i̶̶̶̶̶t̶̶̶̶̶ ̶̶̶̶̶m̶̶̶̶̶i̶̶̶̶̶g̶̶̶̶̶h̶̶̶̶̶t̶̶̶̶̶ ̶̶̶̶̶b̶̶̶̶̶e̶̶̶̶̶ ̶̶̶̶̶j̶̶̶̶̶i̶̶̶̶̶a̶̶̶̶̶y̶̶̶̶̶a̶̶̶̶̶n̶̶̶̶̶g̶̶̶̶̶'̶̶̶̶̶s̶̶̶̶̶ ̶̶̶̶̶s̶̶̶̶̶u̶̶̶̶̶p̶̶̶̶̶e̶̶̶̶̶r̶̶̶̶̶f̶̶̶̶̶l̶̶̶̶̶o̶̶̶̶̶u̶̶̶̶̶s̶̶̶̶̶ ̶̶̶̶̶a̶̶̶̶̶b̶̶̶̶̶s̶̶̶̶̶t̶̶̶̶̶r̶̶̶̶̶a̶̶̶̶̶c̶̶̶̶̶t̶̶̶̶̶i̶̶̶̶̶o̶̶̶̶̶n̶̶̶̶̶s̶̶̶̶̶ ̶̶̶̶̶w̶̶̶̶̶h̶̶̶̶̶i̶̶̶̶̶c̶̶̶̶̶h̶̶̶̶̶ ̶̶̶̶̶c̶̶̶̶̶a̶̶̶̶̶u̶̶̶̶̶s̶̶̶̶̶e̶̶̶̶̶ ̶̶̶̶̶t̶̶̶̶̶h̶̶̶̶̶e̶̶̶̶̶ ̶̶̶̶̶b̶̶̶̶̶r̶̶̶̶̶o̶̶̶̶̶w̶̶̶̶̶s̶̶̶̶̶e̶̶̶̶̶r̶̶̶̶̶ ̶̶̶̶̶t̶̶̶̶̶o̶̶̶̶̶ ̶̶̶̶̶s̶̶̶̶̶l̶̶̶̶̶o̶̶̶̶̶w̶̶̶̶̶ ̶̶̶̶̶d̶̶̶̶̶o̶̶̶̶̶w̶̶̶̶̶n̶̶̶̶̶.̶̶̶̶̶
+Update at 22 : 47- I apologize for blaming someone else for a problem I had.
+I am justa lowly snail. Someone should dash through me with sharp shadow equipped.
+Anyway, for some reason, if you clearrect before you draw, it looks smooth,
+but if you don't it looks how it looks now.
+==============================================================
+
+johnsonL -- 2019-05-16 00:02
+--------------------------------------------------------------
++ changed some styling; added a side for options like color pick and size change
++ added slider for brush size
+00:12
++ eyedropper tool
+==============================================================
+
+kennyL -- 2019-05-16 00:43
+--------------------------------------------------------------
++ added register/login/logout methods
++ added dynamic nav bar for logged in user
+==============================================================
+
+chenD -- 2019-05-16 17:08
+--------------------------------------------------------------
++ created the fill tool, which fills in an enclosed area with
+the color that is selected, it's a bit slow however
+==============================================================
+
+jiayangC -- 2019-05-16 19:18
+--------------------------------------------------------------
++ added indicator for tool selected
++ added paintbrush cursor
++ added eyedrop cursor
++ added cursor generalization (also stopped using svg + cursor combo cause there was a size limit; went back to canvas)
+==============================================================
+
+johnsonLi -- 2019-05-16 23:59
+--------------------------------------------------------------
++ changed indicator styling
++ made it so click and drag works with eyedrop
++ changed how to color value is stored and tried to add opacity as an options
+but something weird happens. Might have to do something with how the paintbrush works.
+==============================================================
+
+kennyL -- 2019-05-17 07:39
+--------------------------------------------------------------
++ fixed placement of links on nav bar
++ added method for retrieving image from database
++ added html page for displaying image
+==============================================================
+
+jiayangC -- 2019-05-18 13:52
+--------------------------------------------------------------
++ fixed paintbrush opacity and choppiness
++ styling: made canvas centered, gave options bar color and styled the separators
+==============================================================
+
+kennyL -- 2019-05-18 20:07
+--------------------------------------------------------------
++ added functionality for working on saved images
+
+TODO:
++ replace hard coded data on retrieve data from database
++ incorporate download button
+==============================================================
+
+chenD -- 2019-05-18 21:02
+--------------------------------------------------------------
++ created the rectangle and ellipse tool, also fixed a bug with fill
+==============================================================
+
+jiayangC -- 2019-05-18 22:30
+--------------------------------------------------------------
++ added shift option for the rect and ellipse tools to draw squares and circles respectively
++ added fill option for the tools above ^^
+==============================================================
+
+johnsonL -- 2019-05-19 00:25
+--------------------------------------------------------------
++ slider resets on refresh.
++ input for brush size and opacity.
+01:44
++ added smudge
++ fixed smudge not changing with brush size.
+02:15
++ minor addition for rounded corner of rect.
+03:44
++ started on filters but it don't work.
+==============================================================
+
+kennyL -- 2019-05-19 18:09
+--------------------------------------------------------------
++ combined download test files with canvas.html
++ added input field for drawing name
+
+TODO:
++ make drawing name save to database
++ replace hardcoded data for drawing name
++ stylize saved drawings page
+==============================================================
+
+jiayangC -- 2019-05-20 13:19
+--------------------------------------------------------------
++ started undo redo
+==============================================================
+
+chenD -- 2019-05-20 18:12
+--------------------------------------------------------------
++ created a modal which asks the user if they want a transparent
+or white background and modifies the canvas accordingly
+==============================================================
+
+johnsonL -- 2019-05-21 13:13
+--------------------------------------------------------------
++ grayscale works.
++ invert works.
+==============================================================
+
+kennyL -- 2019-05-22 00:50
+--------------------------------------------------------------
++ made drawing name show up after going through saved drawings
++ removed test text from brush size
+==============================================================
+
+johnsonL -- 2019-05-22 13:13
+--------------------------------------------------------------
++ sepia works.
+==============================================================
+
+kennyL -- 2019-05-22 13:20
+--------------------------------------------------------------
++ started working on deleting for saved drawings
+
+TODO:
++ create/connect the route for deleting
++ add delete button to every saved drawing
++ add overwrite message for users
+==============================================================
+
+kennyL -- 2019-05-23 13:02
+--------------------------------------------------------------
++ added delete for saved drawings
++ remove test route for blob
+==============================================================
+
+johnsonL -- 2019-05-23 13:18
+--------------------------------------------------------------
++ did brightness but it's bad. will make better soon.
+==============================================================
+
+chenD & kennyL -- 2019-05-24 13:14
+--------------------------------------------------------------
++ fixed issue with saving layers
+==============================================================
+
+chenD -- 2019-05-24 14:50
+--------------------------------------------------------------
++ almost done with cropping, just need to get rid of borders
++ edit: got rid of the borders
+==============================================================
+
+jiayangC -- 2019-05-24 16:07
+--------------------------------------------------------------
++ added adding layers, moved layers into divs for easier accessibility
++ added deleting layers, changed undo to work
+==============================================================
+
+kennyL -- 2019-05-25 16:42
+--------------------------------------------------------------
++ added overwrite warning message for download
+==============================================================
+
+chenD -- 2019-05-28 18:12
+--------------------------------------------------------------
++ fixed bug with cropping where erasing after cropping would
+result in a transparent background
++ also made it so that when cropping, the layers are preserved
+==============================================================
+
+chenD -- 2019-05-29 08:42
+--------------------------------------------------------------
++ fixed bug with cropping where the background would always
+be transparent after loading a saved drawing that's been cropped
+==============================================================
+
+chenD -- 2019-05-30 13:00
+--------------------------------------------------------------
++ made it so that the user can choose their background every time
+they load a drawing
++ made select only select what's drawn and not the entire
+rectangle
+==============================================================
+
+chenJ -- 2019-05-30 20:31
+--------------------------------------------------------------
++ styling layers
++ added tooltips for the icons
++ fixed smudge for new background
+==============================================================
+
+kennyL -- 2019-05-30 22:01
+--------------------------------------------------------------
++ reconfigured database to store background color
++ added background color to saved drawings
++ fixed launch instructions for README
+==============================================================
+
+jiayangC -- 2019-05-31 23:58
+--------------------------------------------------------------
++ COMPLETE OVERHAUL OF UNDO REDO (IT WORKS, WOO HOO)
++ layer visibility
+==============================================================
+
+kennyL -- 2019-06-01 01:20
+--------------------------------------------------------------
++ added downloading locally
+==============================================================
+
+kennyL -- 2019-06-01 15:34
+--------------------------------------------------------------
++ added white background on downloads
++ fixed bug with dropper
++ stylized saved drawings
+==============================================================
+
+kennyL -- 2019-06-05 00:37
+--------------------------------------------------------------
+What did other team do? A swipe based website that allows individuals
+    to meet each other in a professional manner.
+Were they successful? Yes, although the content was lacking.
+Can you explain errors, if any? No errors were found.
+Who was other team? Billionaires Boys Club
+    Robin Han, Sajed Nahian, Jerry Ye, Bill Ni
+==============================================================
+
+KennyL -- 2019-06-06 13:11
+--------------------------------------------------------------
+- removed brightness.js
+- removed test image
++ fixed bug with shapes + fill
++ fixed bug with removing layers
+==============================================================
+
+jiayangC -- 2019-06-06 14:32
+--------------------------------------------------------------
++ users can now delete the bottom layer, as long as there is at least 2 layers
+==============================================================
